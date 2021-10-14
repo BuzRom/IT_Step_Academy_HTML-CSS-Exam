@@ -1,0 +1,136 @@
+.section-1 {
+   & li {
+      width: 23.5%;
+      padding: 14px;
+   }
+   & svg {
+      width: 30%;
+      max-width: 100px;
+      min-width: 80px;
+      height: auto;
+      padding: 20px;
+      position: absolute;
+      top: -14px;
+      left: 14px;
+      transition: all 0.3s;
+   }
+   & svg:hover {
+      transform: scale(1.1);
+   }
+   .item-info {
+      float: right;
+      text-align: right;
+      padding: 5px 0 10px 0;
+
+      & p {
+         padding: 0 0 28px 0;
+         font-size: 0.75em;
+      }
+      & span {
+         font-size: 1.6em;
+      }
+   }
+
+   .item-bottom {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      float: left;
+      font-size: 0.7em;
+      padding-top: 14px;
+      border-top: 2px solid #e3e3e3;
+
+      & img {
+         width: 8px;
+         margin-right: 3px;
+      }
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .section-1 {
+      & li {
+         width: 48.5%;
+         padding: 18px;
+
+         &:first-child {
+            margin-bottom: 40px;
+         }
+         &:nth-child(2) {
+            margin-bottom: 40px;
+         }
+      }
+      & svg {
+         width: 40%;
+         min-width: none;
+         padding: 18px;
+         top: -18px;
+         left: 18px;
+      }
+      .item-bottom {
+         padding-top: 18px;
+
+         & img {
+            width: 11px;
+            margin-right: 3px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .section-1 {
+      & li {
+         width: 48.5%;
+         padding: 20px;
+      }
+      & svg {
+         padding: 20px;
+         top: -20px;
+         left: 20px;
+      }
+      .item-info {
+         & p {
+            font-size: 0.8em;
+         }
+         & span {
+            font-size: 1.65em;
+         }
+      }
+      .item-bottom {
+         font-size: 0.75em;
+         margin-top: 5px;
+         padding-top: 20px;
+
+         & img {
+            width: 14px;
+            margin-right: 5px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .section-1 {
+      .item-bottom {
+         & img {
+            width: 14px;
+            margin-right: 5px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .section-1 {
+      & li {
+         width: 100%;
+         padding: 20px;
+         margin-bottom: 40px;
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
