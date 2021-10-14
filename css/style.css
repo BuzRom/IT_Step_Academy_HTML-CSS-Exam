@@ -449,7 +449,7 @@ header h4 {
   width: 50px;
 }
 .list-1__button-block button:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   transition: all 0.2s;
 }
 .list-1__button-block button:active {
